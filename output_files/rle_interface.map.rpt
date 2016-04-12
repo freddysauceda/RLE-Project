@@ -1,0 +1,438 @@
+Analysis & Synthesis report for rle_interface
+Tue Feb 09 17:58:14 2016
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |rle|state
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++-----------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status       ; Successful - Tue Feb 09 17:58:13 2016       ;
+; Quartus Prime Version             ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                     ; rle_interface                               ;
+; Top-level Entity Name             ; rle                                         ;
+; Family                            ; Arria II GX                                 ;
+; Logic utilization                 ; N/A                                         ;
+;     Combinational ALUTs           ; 246                                         ;
+;     Memory ALUTs                  ; 0                                           ;
+;     Dedicated logic registers     ; 163                                         ;
+; Total registers                   ; 163                                         ;
+; Total pins                        ; 214                                         ;
+; Total virtual pins                ; 0                                           ;
+; Total block memory bits           ; 0                                           ;
+; DSP block 18-bit elements         ; 0                                           ;
+; Total GXB Receiver Channel PCS    ; 0                                           ;
+; Total GXB Receiver Channel PMA    ; 0                                           ;
+; Total GXB Transmitter Channel PCS ; 0                                           ;
+; Total GXB Transmitter Channel PMA ; 0                                           ;
+; Total PLLs                        ; 0                                           ;
+; Total DLLs                        ; 0                                           ;
++-----------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; EP2AGX45DF29I5     ;                    ;
+; Top-level entity name                                                           ; rle                ; rle_interface      ;
+; Family name                                                                     ; Arria II GX        ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                        ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                               ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ; < 0.1%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                              ;
++----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
+; rle_interface.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Freddy/Desktop/RLE/rle_interface.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++-----------------------------------------------+-----------+
+; Resource                                      ; Usage     ;
++-----------------------------------------------+-----------+
+; Estimated ALUTs Used                          ; 246       ;
+;     -- Combinational ALUTs                    ; 246       ;
+;     -- Memory ALUTs                           ; 0         ;
+;     -- LUT_REGs                               ; 0         ;
+; Dedicated logic registers                     ; 163       ;
+;                                               ;           ;
+; Estimated ALUTs Unavailable                   ; 25        ;
+;     -- Due to unpartnered combinational logic ; 25        ;
+;     -- Due to Memory ALUTs                    ; 0         ;
+;                                               ;           ;
+; Total combinational functions                 ; 246       ;
+; Combinational ALUT usage by number of inputs  ;           ;
+;     -- 7 input functions                      ; 0         ;
+;     -- 6 input functions                      ; 46        ;
+;     -- 5 input functions                      ; 35        ;
+;     -- 4 input functions                      ; 31        ;
+;     -- <=3 input functions                    ; 134       ;
+;                                               ;           ;
+; Combinational ALUTs by mode                   ;           ;
+;     -- normal mode                            ; 135       ;
+;     -- extended LUT mode                      ; 0         ;
+;     -- arithmetic mode                        ; 111       ;
+;     -- shared arithmetic mode                 ; 0         ;
+;                                               ;           ;
+; Estimated ALUT/register pairs used            ; 320       ;
+;                                               ;           ;
+; Total registers                               ; 163       ;
+;     -- Dedicated logic registers              ; 163       ;
+;     -- I/O registers                          ; 0         ;
+;     -- LUT_REGs                               ; 0         ;
+;                                               ;           ;
+;                                               ;           ;
+; I/O pins                                      ; 214       ;
+;                                               ;           ;
+; DSP block 18-bit elements                     ; 0         ;
+;                                               ;           ;
+; Maximum fan-out node                          ; clk~input ;
+; Maximum fan-out                               ; 164       ;
+; Total fan-out                                 ; 1832      ;
+; Average fan-out                               ; 2.19      ;
++-----------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                       ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+--------------+
+; |rle                       ; 246 (246)         ; 163 (163)    ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 214  ; 0            ; |rle                ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------+
+; State Machine - |rle|state                                            ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+; Name      ; state.011 ; state.010 ; state.000 ; state.001 ; state.100 ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+; state.001 ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; state.000 ; 0         ; 0         ; 1         ; 1         ; 0         ;
+; state.010 ; 0         ; 1         ; 0         ; 1         ; 0         ;
+; state.011 ; 1         ; 0         ; 0         ; 1         ; 0         ;
+; state.100 ; 0         ; 0         ; 0         ; 1         ; 1         ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; rd_amt[0,1]                            ; Merged with full_reset                 ;
+; rle_siz[0]                             ; Merged with full_reset                 ;
+; wr_amt[0,1]                            ; Merged with full_reset                 ;
+; full_reset                             ; Stuck at GND due to stuck port data_in ;
+; state~4                                ; Lost fanout                            ;
+; state~5                                ; Lost fanout                            ;
+; state.100                              ; Stuck at GND due to stuck port data_in ;
+; state.000                              ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 10 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                        ;
++---------------+---------------------------+----------------------------------------+
+; Register name ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------+---------------------------+----------------------------------------+
+; state.100     ; Stuck at GND              ; state.000                              ;
+;               ; due to stuck port data_in ;                                        ;
++---------------+---------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 163   ;
+; Number of registers using Synchronous Clear  ; 130   ;
+; Number of registers using Synchronous Load   ; 32    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 156   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |rle|d_in[29]              ;
+; 3:1                ; 24 bits   ; 48 ALUTs      ; 0 ALUTs              ; 48 ALUTs               ; Yes        ; |rle|d_in[23]              ;
+; 4:1                ; 8 bits    ; 16 ALUTs      ; 0 ALUTs              ; 16 ALUTs               ; Yes        ; |rle|prev_val[6]           ;
+; 4:1                ; 14 bits   ; 28 ALUTs      ; 0 ALUTs              ; 28 ALUTs               ; Yes        ; |rle|rd_amt[10]            ;
+; 5:1                ; 14 bits   ; 42 ALUTs      ; 0 ALUTs              ; 42 ALUTs               ; Yes        ; |rle|wr_amt[9]             ;
+; 6:1                ; 16 bits   ; 64 ALUTs      ; 0 ALUTs              ; 64 ALUTs               ; Yes        ; |rle|buff[8]               ;
+; 6:1                ; 14 bits   ; 56 ALUTs      ; 14 ALUTs             ; 42 ALUTs               ; Yes        ; |rle|rle_siz[12]           ;
+; 7:1                ; 8 bits    ; 32 ALUTs      ; 8 ALUTs              ; 24 ALUTs               ; Yes        ; |rle|buff[16]              ;
+; 7:1                ; 8 bits    ; 32 ALUTs      ; 0 ALUTs              ; 32 ALUTs               ; Yes        ; |rle|buff[31]              ;
+; 8:1                ; 8 bits    ; 40 ALUTs      ; 8 ALUTs              ; 32 ALUTs               ; Yes        ; |rle|prev_run[4]           ;
+; 9:1                ; 32 bits   ; 192 ALUTs     ; 0 ALUTs              ; 192 ALUTs              ; Yes        ; |rle|d_in_shft_ct[27]      ;
+; 12:1               ; 2 bits    ; 16 ALUTs      ; 12 ALUTs             ; 4 ALUTs                ; No         ; |rle|state                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriaii_ff            ; 163                         ;
+;     ENA               ; 2                           ;
+;     ENA SCLR          ; 122                         ;
+;     ENA SCLR SLD      ; 8                           ;
+;     ENA SLD           ; 24                          ;
+;     plain             ; 7                           ;
+; boundary_port         ; 214                         ;
+; stratixiv_lcell_comb  ; 247                         ;
+;     arith             ; 111                         ;
+;         1 data inputs ; 97                          ;
+;         4 data inputs ; 7                           ;
+;         5 data inputs ; 7                           ;
+;     normal            ; 136                         ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 26                          ;
+;         4 data inputs ; 24                          ;
+;         5 data inputs ; 28                          ;
+;         6 data inputs ; 46                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.85                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+    Info: Processing started: Tue Feb 09 17:58:01 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rle_interface -c rle_interface
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file rle_interface.v
+    Info (12023): Found entity 1: rle File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 1
+Info (12127): Elaborating entity "rle" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at rle_interface.v(229): truncated value with size 32 to match size of target (16) File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 229
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "rle_size[0]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[16]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[17]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[18]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[19]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[20]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[21]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[22]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[23]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[24]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[25]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[26]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[27]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[28]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[29]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[30]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+    Warning (13410): Pin "rle_size[31]" is stuck at GND File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 40
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 32 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "message_addr[16]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[17]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[18]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[19]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[20]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[21]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[22]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[23]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[24]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[25]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[26]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[27]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[28]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[29]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[30]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "message_addr[31]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 22
+    Warning (15610): No output dependent on input pin "rle_addr[16]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[17]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[18]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[19]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[20]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[21]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[22]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[23]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[24]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[25]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[26]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[27]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[28]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[29]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[30]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+    Warning (15610): No output dependent on input pin "rle_addr[31]" File: C:/Users/Freddy/Desktop/RLE/rle_interface.v Line: 27
+Info (21057): Implemented 516 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 131 input pins
+    Info (21059): Implemented 83 output pins
+    Info (21061): Implemented 302 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 52 warnings
+    Info: Peak virtual memory: 898 megabytes
+    Info: Processing ended: Tue Feb 09 17:58:14 2016
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:25
+
+

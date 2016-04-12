@@ -1,0 +1,335 @@
+# Reading C:/altera_lite/15.1/modelsim_ase/tcl/vsim/pref.tcl
+cd C:/Users/Freddy/Desktop/SHA-1
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/SHA-1/SHA1_hash_interface.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 10:45:34 on Mar 19,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/SHA-1/SHA1_hash_interface.v 
+# -- Compiling module SHA1_hash
+# 
+# Top level modules:
+# 	SHA1_hash
+# End time: 10:45:34 on Mar 19,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/SHA-1/SHA1_hash_testbench_511.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 10:45:34 on Mar 19,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/SHA-1/SHA1_hash_testbench_511.v 
+# -- Compiling module SHA1_hash_testbench
+# 
+# Top level modules:
+# 	SHA1_hash_testbench
+# End time: 10:45:35 on Mar 19,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -gui work.SHA1_hash_testbench
+# vsim -gui work.SHA1_hash_testbench 
+# Start time: 10:45:47 on Mar 19,2016
+# Loading work.SHA1_hash_testbench
+# Loading work.SHA1_hash
+# WARNING: No extended dataflow license exists
+run -all
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# -----------
+# 
+# Messagetext
+# 
+# -----------
+# 
+# 01234567
+# 
+# 02468ace
+# 
+# 048d159c
+# 
+# 091a2b38
+# 
+# 12345670
+# 
+# 2468ace0
+# 
+# 48d159c0
+# 
+# 91a2b380
+# 
+# 23456701
+# 
+# 468ace02
+# 
+# 8d159c04
+# 
+# 1a2b3809
+# 
+# 34567012
+# 
+# 68ace024
+# 
+# d159c048
+# 
+# a2b38091
+# 
+# 45670123
+# 
+# 8ace0246
+# 
+# 159c048d
+# 
+# 2b38091a
+# 
+# 56701234
+# 
+# ace02468
+# 
+# 59c048d1
+# 
+# b38091a2
+# 
+# 67012345
+# 
+# ce02468a
+# 
+# 9c048d15
+# 
+# 38091a2b
+# 
+# 70123456
+# 
+# e02468ac
+# 
+# c048d159
+# 
+# 8091a2b3
+# 
+# 01234567
+# 
+# 02468ace
+# 
+# 048d159c
+# 
+# 091a2b38
+# 
+# 12345670
+# 
+# 2468ace0
+# 
+# 48d159c0
+# 
+# 91a2b380
+# 
+# 23456701
+# 
+# 468ace02
+# 
+# 8d159c04
+# 
+# 1a2b3809
+# 
+# 34567012
+# 
+# 68ace024
+# 
+# d159c048
+# 
+# a2b38091
+# 
+# 45670123
+# 
+# 8ace0246
+# 
+# 159c048d
+# 
+# 2b38091a
+# 
+# 56701234
+# 
+# ace02468
+# 
+# 59c048d1
+# 
+# b38091a2
+# 
+# 67012345
+# 
+# ce02468a
+# 
+# 9c048d15
+# 
+# 38091a2b
+# 
+# 70123456
+# 
+# e02468ac
+# 
+# c048d159
+# 
+# 8091a2b3
+# 
+# 01234567
+# 
+# 02468ace
+# 
+# 048d159c
+# 
+# 091a2b38
+# 
+# 12345670
+# 
+# 2468ace0
+# 
+# 48d159c0
+# 
+# 91a2b380
+# 
+# 23456701
+# 
+# 468ace02
+# 
+# 8d159c04
+# 
+# 1a2b3809
+# 
+# 34567012
+# 
+# 68ace024
+# 
+# d159c048
+# 
+# a2b38091
+# 
+# 45670123
+# 
+# 8ace0246
+# 
+# 159c048d
+# 
+# 2b38091a
+# 
+# 56701234
+# 
+# ace02468
+# 
+# 59c048d1
+# 
+# b38091a2
+# 
+# 67012345
+# 
+# ce02468a
+# 
+# 9c048d15
+# 
+# 38091a2b
+# 
+# 70123456
+# 
+# e02468ac
+# 
+# c048d159
+# 
+# 8091a2b3
+# 
+# 01234567
+# 
+# 02468ace
+# 
+# 048d159c
+# 
+# 091a2b38
+# 
+# 12345670
+# 
+# 2468ace0
+# 
+# 48d159c0
+# 
+# 91a2b380
+# 
+# 23456701
+# 
+# 468ace02
+# 
+# 8d159c04
+# 
+# 1a2b3809
+# 
+# 34567012
+# 
+# 68ace024
+# 
+# d159c048
+# 
+# a2b38091
+# 
+# 45670123
+# 
+# 8ace0246
+# 
+# 159c048d
+# 
+# 2b38091a
+# 
+# 56701234
+# 
+# ace02468
+# 
+# 59c048d1
+# 
+# b38091a2
+# 
+# 67012345
+# 
+# ce02468a
+# 
+# 9c048d15
+# 
+# 38091a2b
+# 
+# 70123456
+# 
+# e02468ac
+# 
+# c048d159
+# 
+# 8091a2b3
+# 
+# ---------------------------
+# 
+# correct hash result is:
+# 
+# ---------------------------
+# 
+# 8fbbe4a8e53fc0130541ee591cd0c3f96eb8dafc
+# 
+# ---------------------------
+# 
+# Your result is:
+# 
+# ---------------------------
+# 
+# 8fbbe4a8e53fc0130541ee591cd0c3f96eb8dafc
+# 
+# ***************************
+# 
+# Congratulations! You have the correct hashing result!
+# 
+# Total number of cycles:         733
+# 
+# 
+# Keep improving your design and also try different input sizes.
+# 
+# Send Hao your best design before the deadline.
+# 
+# ***************************
+# 
+# EOF
+# 
+# ** Note: $stop    : C:/Users/Freddy/Desktop/SHA-1/SHA1_hash_testbench_511.v(232)
+#    Time: 14710 ps  Iteration: 2  Instance: /SHA1_hash_testbench
+# Break in Module SHA1_hash_testbench at C:/Users/Freddy/Desktop/SHA-1/SHA1_hash_testbench_511.v line 232

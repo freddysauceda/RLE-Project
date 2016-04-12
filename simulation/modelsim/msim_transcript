@@ -1,0 +1,1630 @@
+# do rle_interface_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera_lite/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera_lite/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Freddy/Desktop/RLE {C:/Users/Freddy/Desktop/RLE/rle_interface.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:26:50 on Feb 09,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Freddy/Desktop/RLE" C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:26:50 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:27:19 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:27:20 on Feb 09,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:27:20 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v 
+# -- Compiling module rle_testbench
+# 
+# Top level modules:
+# 	rle_testbench
+# End time: 17:27:20 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:27:20 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v 
+# -- Compiling module rle_testbench2
+# 
+# Top level modules:
+# 	rle_testbench2
+# End time: 17:27:20 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run -all
+# No Design Loaded!
+vsim +altera -l msim_transcript -do rle_interface_run_msim_rtl_verilog.do work.rle_testbench
+# vsim "+altera" -l msim_transcript -do "rle_interface_run_msim_rtl_verilog.do" work.rle_testbench 
+# Start time: 17:27:57 on Feb 09,2016
+# Loading work.rle_testbench
+# Loading work.rle
+# do rle_interface_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Freddy/Desktop/RLE {C:/Users/Freddy/Desktop/RLE/rle_interface.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:27:59 on Feb 09,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Freddy/Desktop/RLE" C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:27:59 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# Load canceled
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:29:18 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:29:18 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:29:18 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v 
+# -- Compiling module rle_testbench
+# 
+# Top level modules:
+# 	rle_testbench
+# End time: 17:29:18 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:29:18 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v 
+# -- Compiling module rle_testbench2
+# 
+# Top level modules:
+# 	rle_testbench2
+# End time: 17:29:18 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run -all
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# ** Warning: (vsim-7) Failed to open readmem file "plaintext.dat" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : C:/Users/Freddy/Desktop/RLE/rle_testbench.v(70)
+#    Time: 90 ps  Iteration: 1  Instance: /rle_testbench
+# -----------
+# 
+# Plaintext 1
+# 
+# -----------
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:30:49 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:30:49 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:30:49 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v 
+# -- Compiling module rle_testbench
+# 
+# Top level modules:
+# 	rle_testbench
+# End time: 17:30:49 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:30:49 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v 
+# -- Compiling module rle_testbench2
+# 
+# Top level modules:
+# 	rle_testbench2
+# End time: 17:30:49 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Break key hit
+# Simulation stop requested.
+restart -f
+# Loading work.rle_testbench
+# Loading work.rle
+vsim +altera -l msim_transcript -do rle_interface_run_msim_rtl_verilog.do work.rle_testbench
+# End time: 17:31:11 on Feb 09,2016, Elapsed time: 0:03:14
+# Errors: 1, Warnings: 1
+# vsim "+altera" -l msim_transcript -do "rle_interface_run_msim_rtl_verilog.do" work.rle_testbench 
+# Start time: 17:31:11 on Feb 09,2016
+# Loading work.rle_testbench
+# Loading work.rle
+# do rle_interface_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Freddy/Desktop/RLE {C:/Users/Freddy/Desktop/RLE/rle_interface.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:31:12 on Feb 09,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Freddy/Desktop/RLE" C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:31:12 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+run -all
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# ** Warning: (vsim-7) Failed to open readmem file "plaintext.dat" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : C:/Users/Freddy/Desktop/RLE/rle_testbench.v(70)
+#    Time: 90 ps  Iteration: 1  Instance: /rle_testbench
+# -----------
+# 
+# Plaintext 1
+# 
+# -----------
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Error: (vsim-3170) Could not find 'C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work.rle_testbench'.
+# 
+# Load canceled
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:33:23 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:33:24 on Feb 09,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:33:24 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v 
+# -- Compiling module rle_testbench
+# 
+# Top level modules:
+# 	rle_testbench
+# End time: 17:33:24 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:33:24 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v 
+# -- Compiling module rle_testbench2
+# 
+# Top level modules:
+# 	rle_testbench2
+# End time: 17:33:24 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim +altera -l msim_transcript -do rle_interface_run_msim_rtl_verilog.do work.rle_testbench
+# vsim "+altera" -l msim_transcript -do "rle_interface_run_msim_rtl_verilog.do" work.rle_testbench 
+# Start time: 17:31:11 on Feb 09,2016
+# Error loading design
+# End time: 17:33:31 on Feb 09,2016, Elapsed time: 0:02:20
+# Errors: 1, Warnings: 1
+vsim +altera -l msim_transcript -do rle_interface_run_msim_rtl_verilog.do work.rle_testbench2
+# vsim "+altera" -l msim_transcript -do "rle_interface_run_msim_rtl_verilog.do" work.rle_testbench2 
+# Start time: 17:33:49 on Feb 09,2016
+# Loading work.rle_testbench2
+# Loading work.rle
+# do rle_interface_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Freddy/Desktop/RLE {C:/Users/Freddy/Desktop/RLE/rle_interface.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:33:49 on Feb 09,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Freddy/Desktop/RLE" C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:33:49 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+run -all
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# ** Warning: (vsim-7) Failed to open readmem file "plaintextLong.dat" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : C:/Users/Freddy/Desktop/RLE/rle_testbench2.v(70)
+#    Time: 90 ps  Iteration: 1  Instance: /rle_testbench2
+# -----------
+# 
+# Plaintext	 
+# 
+# -----------
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:34:37 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:34:37 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:34:37 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v 
+# -- Compiling module rle_testbench
+# 
+# Top level modules:
+# 	rle_testbench
+# End time: 17:34:37 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:34:37 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v 
+# -- Compiling module rle_testbench2
+# 
+# Top level modules:
+# 	rle_testbench2
+# End time: 17:34:37 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Break key hit
+# Simulation stop requested.
+vsim +altera -l msim_transcript -do rle_interface_run_msim_rtl_verilog.do work.rle_testbench
+# End time: 17:34:49 on Feb 09,2016, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 1
+# vsim "+altera" -l msim_transcript -do "rle_interface_run_msim_rtl_verilog.do" work.rle_testbench 
+# Start time: 17:34:49 on Feb 09,2016
+# Loading work.rle_testbench
+# Loading work.rle
+# do rle_interface_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Freddy/Desktop/RLE {C:/Users/Freddy/Desktop/RLE/rle_interface.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:34:50 on Feb 09,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Freddy/Desktop/RLE" C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:34:50 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+run -all
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# ** Warning: (vsim-7) Failed to open readmem file "plaintext.dat" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : C:/Users/Freddy/Desktop/RLE/rle_testbench.v(70)
+#    Time: 90 ps  Iteration: 1  Instance: /rle_testbench
+# -----------
+# 
+# Plaintext 1
+# 
+# -----------
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+# xxxxxxxx
+# 
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:36:19 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:36:19 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:36:19 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v 
+# -- Compiling module rle_testbench
+# 
+# Top level modules:
+# 	rle_testbench
+# End time: 17:36:19 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:36:19 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v 
+# -- Compiling module rle_testbench2
+# 
+# Top level modules:
+# 	rle_testbench2
+# End time: 17:36:19 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Break key hit
+# Break in Module rle_testbench at C:/Users/Freddy/Desktop/RLE/rle_testbench.v line 51
+restart -f
+# Loading work.rle_testbench
+# Loading work.rle
+vsim +altera -l msim_transcript -do rle_interface_run_msim_rtl_verilog.do work.rle_testbench
+# End time: 17:36:39 on Feb 09,2016, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 1
+# vsim "+altera" -l msim_transcript -do "rle_interface_run_msim_rtl_verilog.do" work.rle_testbench 
+# Start time: 17:36:39 on Feb 09,2016
+# Loading work.rle_testbench
+# Loading work.rle
+# do rle_interface_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# Error 31: Unable to unlink file "C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work/_lib.qdb".
+# Error 133: Unable to remove directory "C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work".
+# vlib rtl_work
+# ** Error: (vlib-35) Failed to create directory "rtl_work".
+# 
+# File exists. (errno = EEXIST)
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Freddy/Desktop/RLE {C:/Users/Freddy/Desktop/RLE/rle_interface.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:36:41 on Feb 09,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Freddy/Desktop/RLE" C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:36:41 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+run -all
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# -----------
+# 
+# Plaintext 1
+# 
+# -----------
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000028
+# 
+# 864d7f00
+# 
+# 1st latency          66!
+# 
+# -----------
+# 
+# Correct rle_size:         12
+# 
+# -----------
+# 
+# Compressed text 1
+# 
+# -----------
+# 
+# 28010028
+# 
+# 7f010004
+# 
+# 86014d01
+# 
+# -----------
+# 
+# Plaintext 2
+# 
+# -----------
+# 
+# 00000000
+# 
+# 12345678
+# 
+# 9abcdef0
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 0f005030
+# 
+# 00000028
+# 
+# 864d7f00
+# 
+# 82367002
+# 
+# 04564530
+# 
+# 45645722
+# 
+# ab56c352
+# 
+# 00555322
+# 
+# Note, most significant byte (00) of last word should not be encrypted
+# 
+# -----------
+# 
+# Correct rle_size:         76
+# 
+# -----------
+# 
+# Compressed text 2
+# 
+# -----------
+# 
+# 78010004
+# 
+# 34015601
+# 
+# f0011201
+# 
+# bc01de01
+# 
+# 00089a01
+# 
+# 50013001
+# 
+# 0f010001
+# 
+# 00042801
+# 
+# 4d017f01
+# 
+# 02018601
+# 
+# 36017001
+# 
+# 30018201
+# 
+# 56014501
+# 
+# 22010401
+# 
+# 64015701
+# 
+# 52014501
+# 
+# 5601c301
+# 
+# 2201ab01
+# 
+# 55015301
+# 
+# 2st latency          87!
+# 
+# --Total Latency:         153
+# ** Note: $stop    : C:/Users/Freddy/Desktop/RLE/rle_testbench.v(174)
+#    Time: 3310 ps  Iteration: 2  Instance: /rle_testbench
+# Break in Module rle_testbench at C:/Users/Freddy/Desktop/RLE/rle_testbench.v line 174
+add wave -position insertpoint  \
+sim:/rle_testbench/clk \
+sim:/rle_testbench/nreset \
+sim:/rle_testbench/message_addr \
+sim:/rle_testbench/rle_addr \
+sim:/rle_testbench/message_size \
+sim:/rle_testbench/start \
+sim:/rle_testbench/port_A_data_out \
+sim:/rle_testbench/dpsram \
+sim:/rle_testbench/k \
+sim:/rle_testbench/ii \
+sim:/rle_testbench/iii \
+sim:/rle_testbench/out1 \
+sim:/rle_testbench/count \
+sim:/rle_testbench/rle_size \
+sim:/rle_testbench/port_A_clk \
+sim:/rle_testbench/port_A_data_in \
+sim:/rle_testbench/port_A_addr \
+sim:/rle_testbench/port_A_we \
+sim:/rle_testbench/done
+# (vsim-4077) Logging very large object: /rle_testbench/dpsram 
+run -all
+# Load canceled
+quit -sim
+# doVOpenFlatFile(): INTERNAL ERROR: page load failed for file C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work/rle_testbench/_primary.dbs (0:0 1:1 11 0 0 2993 0x0:0x56ba9413)
+# End time: 17:38:38 on Feb 09,2016, Elapsed time: 0:01:59
+# Errors: 1, Warnings: 0
+# Load canceled
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:38:47 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:38:47 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:38:47 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v 
+# -- Compiling module rle_testbench
+# 
+# Top level modules:
+# 	rle_testbench
+# End time: 17:38:47 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:38:47 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v 
+# -- Compiling module rle_testbench2
+# 
+# Top level modules:
+# 	rle_testbench2
+# End time: 17:38:47 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim +altera -l msim_transcript -do rle_interface_run_msim_rtl_verilog.do work.rle_testbench
+# vsim "+altera" -l msim_transcript -do "rle_interface_run_msim_rtl_verilog.do" work.rle_testbench 
+# Start time: 17:38:52 on Feb 09,2016
+# Loading work.rle_testbench
+# Loading work.rle
+# do rle_interface_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# Error 31: Unable to unlink file "C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work/_lib.qdb".
+# Error 31: Unable to unlink file "C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work".
+# vlib rtl_work
+# ** Error: (vlib-35) Failed to create directory "rtl_work".
+# 
+# File exists. (errno = EEXIST)
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Freddy/Desktop/RLE {C:/Users/Freddy/Desktop/RLE/rle_interface.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:38:54 on Feb 09,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Freddy/Desktop/RLE" C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:38:54 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+add wave -position insertpoint  \
+sim:/rle_testbench/clk \
+sim:/rle_testbench/nreset \
+sim:/rle_testbench/message_addr \
+sim:/rle_testbench/rle_addr \
+sim:/rle_testbench/message_size \
+sim:/rle_testbench/start \
+sim:/rle_testbench/port_A_data_out \
+sim:/rle_testbench/dpsram \
+sim:/rle_testbench/k \
+sim:/rle_testbench/ii \
+sim:/rle_testbench/iii \
+sim:/rle_testbench/out1 \
+sim:/rle_testbench/count \
+sim:/rle_testbench/rle_size \
+sim:/rle_testbench/port_A_clk \
+sim:/rle_testbench/port_A_data_in \
+sim:/rle_testbench/port_A_addr \
+sim:/rle_testbench/port_A_we \
+sim:/rle_testbench/done
+# (vsim-4077) Logging very large object: /rle_testbench/dpsram 
+run -all
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# -----------
+# 
+# Plaintext 1
+# 
+# -----------
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000028
+# 
+# 864d7f00
+# 
+# 1st latency          66!
+# 
+# -----------
+# 
+# Correct rle_size:         12
+# 
+# -----------
+# 
+# Compressed text 1
+# 
+# -----------
+# 
+# 28010028
+# 
+# 7f010004
+# 
+# 86014d01
+# 
+# -----------
+# 
+# Plaintext 2
+# 
+# -----------
+# 
+# 00000000
+# 
+# 12345678
+# 
+# 9abcdef0
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 0f005030
+# 
+# 00000028
+# 
+# 864d7f00
+# 
+# 82367002
+# 
+# 04564530
+# 
+# 45645722
+# 
+# ab56c352
+# 
+# 00555322
+# 
+# Note, most significant byte (00) of last word should not be encrypted
+# 
+# -----------
+# 
+# Correct rle_size:         76
+# 
+# -----------
+# 
+# Compressed text 2
+# 
+# -----------
+# 
+# 78010004
+# 
+# 34015601
+# 
+# f0011201
+# 
+# bc01de01
+# 
+# 00089a01
+# 
+# 50013001
+# 
+# 0f010001
+# 
+# 00042801
+# 
+# 4d017f01
+# 
+# 02018601
+# 
+# 36017001
+# 
+# 30018201
+# 
+# 56014501
+# 
+# 22010401
+# 
+# 64015701
+# 
+# 52014501
+# 
+# 5601c301
+# 
+# 2201ab01
+# 
+# 55015301
+# 
+# 2st latency          87!
+# 
+# --Total Latency:         153
+# ** Note: $stop    : C:/Users/Freddy/Desktop/RLE/rle_testbench.v(174)
+#    Time: 3310 ps  Iteration: 2  Instance: /rle_testbench
+# Break in Module rle_testbench at C:/Users/Freddy/Desktop/RLE/rle_testbench.v line 174
+quit -sim
+# Load canceled
+# End time: 17:42:21 on Feb 09,2016, Elapsed time: 0:03:29
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:42:24 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:42:24 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:42:24 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v 
+# -- Compiling module rle_testbench
+# 
+# Top level modules:
+# 	rle_testbench
+# End time: 17:42:24 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:42:24 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v 
+# -- Compiling module rle_testbench2
+# 
+# Top level modules:
+# 	rle_testbench2
+# End time: 17:42:24 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim +altera -l msim_transcript -do rle_interface_run_msim_rtl_verilog.do work.rle_testbench2
+# vsim "+altera" -l msim_transcript -do "rle_interface_run_msim_rtl_verilog.do" work.rle_testbench2 
+# Start time: 17:42:52 on Feb 09,2016
+# Loading work.rle_testbench2
+# Loading work.rle
+# do rle_interface_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Freddy/Desktop/RLE {C:/Users/Freddy/Desktop/RLE/rle_interface.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:42:55 on Feb 09,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Freddy/Desktop/RLE" C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:42:55 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+run -all
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# -----------
+# 
+# Plaintext	 
+# 
+# -----------
+# 
+# 0a0c0b0a
+# 
+# 0b0a0c0b
+# 
+# 0c0b0a0c
+# 
+# 0a0c0b0a
+# 
+# 0b0a0c0b
+# 
+# 0c0b0a0c
+# 
+# 0a0c0b0a
+# 
+# 0b0a0c0b
+# 
+# 0c0b0a0c
+# 
+# 000c0b0a
+# 
+# Latency          74!
+# 
+# -----------
+# 
+# Correct rle_size:         78
+# 
+# -----------
+# 
+# Compressed text 1
+# 
+# -----------
+# 
+# 0b010a01
+# 
+# 0a010c01
+# 
+# 0c010b01
+# 
+# 0b010a01
+# 
+# 0a010c01
+# 
+# 0c010b01
+# 
+# 0b010a01
+# 
+# 0a010c01
+# 
+# 0c010b01
+# 
+# 0b010a01
+# 
+# 0a010c01
+# 
+# 0c010b01
+# 
+# 0b010a01
+# 
+# 0a010c01
+# 
+# 0c010b01
+# 
+# 0b010a01
+# 
+# 0a010c01
+# 
+# 0c010b01
+# 
+# 0b010a01
+# 
+# 00000c01
+# 
+# ** Note: $stop    : C:/Users/Freddy/Desktop/RLE/rle_testbench2.v(123)
+#    Time: 1750 ps  Iteration: 1  Instance: /rle_testbench2
+# Break in Module rle_testbench2 at C:/Users/Freddy/Desktop/RLE/rle_testbench2.v line 123
+add wave -position insertpoint  \
+sim:/rle_testbench2/clk \
+sim:/rle_testbench2/nreset \
+sim:/rle_testbench2/message_addr \
+sim:/rle_testbench2/rle_addr \
+sim:/rle_testbench2/message_size \
+sim:/rle_testbench2/start \
+sim:/rle_testbench2/port_A_data_out \
+sim:/rle_testbench2/dpsram \
+sim:/rle_testbench2/k \
+sim:/rle_testbench2/ii \
+sim:/rle_testbench2/iii \
+sim:/rle_testbench2/out1 \
+sim:/rle_testbench2/count \
+sim:/rle_testbench2/rle_size \
+sim:/rle_testbench2/port_A_clk \
+sim:/rle_testbench2/port_A_data_in \
+sim:/rle_testbench2/port_A_addr \
+sim:/rle_testbench2/port_A_we \
+sim:/rle_testbench2/done
+# (vsim-4077) Logging very large object: /rle_testbench2/dpsram 
+run
+run
+run -all
+# Break key hit
+# Break key hit
+restart
+# ** Error: (vsim-3170) Could not find 'C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work.rle_testbench2'.
+# 
+# Break key hit
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:44:07 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:44:07 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:44:07 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v 
+# -- Compiling module rle_testbench
+# 
+# Top level modules:
+# 	rle_testbench
+# End time: 17:44:07 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:44:07 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v 
+# -- Compiling module rle_testbench2
+# 
+# Top level modules:
+# 	rle_testbench2
+# End time: 17:44:07 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim +altera -l msim_transcript -do rle_interface_run_msim_rtl_verilog.do work.rle_testbench2
+# vsim "+altera" -l msim_transcript -do "rle_interface_run_msim_rtl_verilog.do" work.rle_testbench2 
+# Start time: 17:42:52 on Feb 09,2016
+# Error loading design
+# End time: 17:44:13 on Feb 09,2016, Elapsed time: 0:01:21
+# Errors: 1, Warnings: 0
+vsim +altera -l msim_transcript -do rle_interface_run_msim_rtl_verilog.do work.rle_testbench2
+# vsim "+altera" -l msim_transcript -do "rle_interface_run_msim_rtl_verilog.do" work.rle_testbench2 
+# Start time: 17:44:26 on Feb 09,2016
+# Loading work.rle_testbench2
+# Loading work.rle
+# do rle_interface_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Freddy/Desktop/RLE {C:/Users/Freddy/Desktop/RLE/rle_interface.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:44:26 on Feb 09,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Freddy/Desktop/RLE" C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:44:26 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+add wave -position insertpoint  \
+sim:/rle_testbench2/clk \
+sim:/rle_testbench2/nreset \
+sim:/rle_testbench2/message_addr \
+sim:/rle_testbench2/rle_addr \
+sim:/rle_testbench2/message_size \
+sim:/rle_testbench2/start \
+sim:/rle_testbench2/port_A_data_out \
+sim:/rle_testbench2/dpsram \
+sim:/rle_testbench2/k \
+sim:/rle_testbench2/ii \
+sim:/rle_testbench2/iii \
+sim:/rle_testbench2/out1 \
+sim:/rle_testbench2/count \
+sim:/rle_testbench2/rle_size \
+sim:/rle_testbench2/port_A_clk \
+sim:/rle_testbench2/port_A_data_in \
+sim:/rle_testbench2/port_A_addr \
+sim:/rle_testbench2/port_A_we \
+sim:/rle_testbench2/done
+# (vsim-4077) Logging very large object: /rle_testbench2/dpsram 
+# Load canceled
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:48:16 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:48:16 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:48:16 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v 
+# -- Compiling module rle_testbench
+# 
+# Top level modules:
+# 	rle_testbench
+# End time: 17:48:16 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:48:16 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v 
+# -- Compiling module rle_testbench2
+# 
+# Top level modules:
+# 	rle_testbench2
+# End time: 17:48:16 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim +altera -l msim_transcript -do rle_interface_run_msim_rtl_verilog.do work.rle_testbench
+# End time: 17:48:39 on Feb 09,2016, Elapsed time: 0:04:13
+# Errors: 1, Warnings: 0
+# vsim "+altera" -l msim_transcript -do "rle_interface_run_msim_rtl_verilog.do" work.rle_testbench 
+# Start time: 17:48:39 on Feb 09,2016
+# Loading work.rle_testbench
+# Loading work.rle
+# do rle_interface_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# Error 31: Unable to unlink file "C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work/_lib.qdb".
+# Error 133: Unable to remove directory "C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work".
+# vlib rtl_work
+# ** Error: (vlib-35) Failed to create directory "rtl_work".
+# 
+# File exists. (errno = EEXIST)
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Freddy/Desktop/RLE {C:/Users/Freddy/Desktop/RLE/rle_interface.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:48:41 on Feb 09,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Freddy/Desktop/RLE" C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:48:41 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+add wave -position insertpoint  \
+sim:/rle_testbench/clk \
+sim:/rle_testbench/nreset \
+sim:/rle_testbench/message_addr \
+sim:/rle_testbench/rle_addr \
+sim:/rle_testbench/message_size \
+sim:/rle_testbench/start \
+sim:/rle_testbench/port_A_data_out \
+sim:/rle_testbench/dpsram \
+sim:/rle_testbench/k \
+sim:/rle_testbench/ii \
+sim:/rle_testbench/iii \
+sim:/rle_testbench/out1 \
+sim:/rle_testbench/count \
+sim:/rle_testbench/rle_size \
+sim:/rle_testbench/port_A_clk \
+sim:/rle_testbench/port_A_data_in \
+sim:/rle_testbench/port_A_addr \
+sim:/rle_testbench/port_A_we \
+sim:/rle_testbench/done
+# (vsim-4077) Logging very large object: /rle_testbench/dpsram 
+run -all
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# -----------
+# 
+# Plaintext 1
+# 
+# -----------
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 00000028
+# 
+# 864d7f00
+# 
+# 1st latency          66!
+# 
+# -----------
+# 
+# Correct rle_size:         12
+# 
+# -----------
+# 
+# Compressed text 1
+# 
+# -----------
+# 
+# 28010028
+# 
+# 7f010004
+# 
+# 86014d01
+# 
+# -----------
+# 
+# Plaintext 2
+# 
+# -----------
+# 
+# 00000000
+# 
+# 12345678
+# 
+# 9abcdef0
+# 
+# 00000000
+# 
+# 00000000
+# 
+# 0f005030
+# 
+# 00000028
+# 
+# 864d7f00
+# 
+# 82367002
+# 
+# 04564530
+# 
+# 45645722
+# 
+# ab56c352
+# 
+# 00555322
+# 
+# Note, most significant byte (00) of last word should not be encrypted
+# 
+# -----------
+# 
+# Correct rle_size:         76
+# 
+# -----------
+# 
+# Compressed text 2
+# 
+# -----------
+# 
+# 78010004
+# 
+# 34015601
+# 
+# f0011201
+# 
+# bc01de01
+# 
+# 00089a01
+# 
+# 50013001
+# 
+# 0f010001
+# 
+# 00042801
+# 
+# 4d017f01
+# 
+# 02018601
+# 
+# 36017001
+# 
+# 30018201
+# 
+# 56014501
+# 
+# 22010401
+# 
+# 64015701
+# 
+# 52014501
+# 
+# 5601c301
+# 
+# 2201ab01
+# 
+# 55015301
+# 
+# 2st latency          87!
+# 
+# --Total Latency:         153
+# ** Note: $stop    : C:/Users/Freddy/Desktop/RLE/rle_testbench.v(174)
+#    Time: 3310 ps  Iteration: 2  Instance: /rle_testbench
+# Break in Module rle_testbench at C:/Users/Freddy/Desktop/RLE/rle_testbench.v line 174
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:49:55 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:49:55 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:49:55 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench.v 
+# -- Compiling module rle_testbench
+# 
+# Top level modules:
+# 	rle_testbench
+# End time: 17:49:55 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:49:55 on Feb 09,2016
+# vlog -reportprogress 300 -work work C:/Users/Freddy/Desktop/RLE/rle_testbench2.v 
+# -- Compiling module rle_testbench2
+# 
+# Top level modules:
+# 	rle_testbench2
+# End time: 17:49:55 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+quit -sim
+vsim +altera -l msim_transcript -do rle_interface_run_msim_rtl_verilog.do work.rle_testbench2
+# End time: 17:50:06 on Feb 09,2016, Elapsed time: 0:01:27
+# Errors: 0, Warnings: 0
+# vsim "+altera" -l msim_transcript -do "rle_interface_run_msim_rtl_verilog.do" work.rle_testbench2 
+# Start time: 17:50:06 on Feb 09,2016
+# Loading work.rle_testbench2
+# Loading work.rle
+# do rle_interface_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# Error 31: Unable to unlink file "C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work/_lib.qdb".
+# Error 133: Unable to remove directory "C:/Users/Freddy/Desktop/RLE/simulation/modelsim/rtl_work".
+# vlib rtl_work
+# ** Error: (vlib-35) Failed to create directory "rtl_work".
+# 
+# File exists. (errno = EEXIST)
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Freddy/Desktop/RLE {C:/Users/Freddy/Desktop/RLE/rle_interface.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 17:50:08 on Feb 09,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Freddy/Desktop/RLE" C:/Users/Freddy/Desktop/RLE/rle_interface.v 
+# -- Compiling module rle
+# 
+# Top level modules:
+# 	rle
+# End time: 17:50:08 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+add wave -position insertpoint  \
+sim:/rle_testbench2/clk \
+sim:/rle_testbench2/nreset \
+sim:/rle_testbench2/message_addr \
+sim:/rle_testbench2/rle_addr \
+sim:/rle_testbench2/message_size \
+sim:/rle_testbench2/start \
+sim:/rle_testbench2/port_A_data_out \
+sim:/rle_testbench2/dpsram \
+sim:/rle_testbench2/k \
+sim:/rle_testbench2/ii \
+sim:/rle_testbench2/iii \
+sim:/rle_testbench2/out1 \
+sim:/rle_testbench2/count \
+sim:/rle_testbench2/rle_size \
+sim:/rle_testbench2/port_A_clk \
+sim:/rle_testbench2/port_A_data_in \
+sim:/rle_testbench2/port_A_addr \
+sim:/rle_testbench2/port_A_we \
+sim:/rle_testbench2/done
+# (vsim-4077) Logging very large object: /rle_testbench2/dpsram 
+run -all
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# Error: memory reference not word aligned!
+# 
+# -----------
+# 
+# Plaintext	 
+# 
+# -----------
+# 
+# 0a0c0b0a
+# 
+# 0b0a0c0b
+# 
+# 0c0b0a0c
+# 
+# 0a0c0b0a
+# 
+# 0b0a0c0b
+# 
+# 0c0b0a0c
+# 
+# 0a0c0b0a
+# 
+# 0b0a0c0b
+# 
+# 0c0b0a0c
+# 
+# 000c0b0a
+# 
+# Latency          74!
+# 
+# -----------
+# 
+# Correct rle_size:         78
+# 
+# -----------
+# 
+# Compressed text 1
+# 
+# -----------
+# 
+# 0b010a01
+# 
+# 0a010c01
+# 
+# 0c010b01
+# 
+# 0b010a01
+# 
+# 0a010c01
+# 
+# 0c010b01
+# 
+# 0b010a01
+# 
+# 0a010c01
+# 
+# 0c010b01
+# 
+# 0b010a01
+# 
+# 0a010c01
+# 
+# 0c010b01
+# 
+# 0b010a01
+# 
+# 0a010c01
+# 
+# 0c010b01
+# 
+# 0b010a01
+# 
+# 0a010c01
+# 
+# 0c010b01
+# 
+# 0b010a01
+# 
+# 00000c01
+# 
+# ** Note: $stop    : C:/Users/Freddy/Desktop/RLE/rle_testbench2.v(123)
+#    Time: 1750 ps  Iteration: 1  Instance: /rle_testbench2
+# Break in Module rle_testbench2 at C:/Users/Freddy/Desktop/RLE/rle_testbench2.v line 123
+# End time: 17:53:54 on Feb 09,2016, Elapsed time: 0:03:48
+# Errors: 0, Warnings: 0

@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Freddy/Desktop/RLE
+vrle
+!s110 1455069387
+!i10b 1
+!s100 0doFdSi4B?8LMnGd>2RDJ2
+I]Mo`>dj_a@BHV5GZ`J3CI0
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1455067568
+8C:/Users/Freddy/Desktop/RLE/rle_interface.v
+FC:/Users/Freddy/Desktop/RLE/rle_interface.v
+L0 1
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1455069387.176000
+!s107 C:/Users/Freddy/Desktop/RLE/rle_interface.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Freddy/Desktop/RLE/rle_interface.v|
+!i113 1
+Z3 o-work work
+vrle_testbench
+!s110 1455069285
+!i10b 1
+!s100 IS:mge=o@l^z[HcjC[iGF1
+IWzEnV;7@1?4fIP[:??9[D2
+R1
+R0
+w1455068166
+8C:/Users/Freddy/Desktop/RLE/rle_testbench.v
+FC:/Users/Freddy/Desktop/RLE/rle_testbench.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1455069285.195000
+!s107 C:/Users/Freddy/Desktop/RLE/rle_testbench.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Freddy/Desktop/RLE/rle_testbench.v|
+!i113 1
+R3
+vrle_testbench2
+!s110 1455069388
+!i10b 1
+!s100 bFn82T6LiFmfhjG<=4E7j1
+ImNBVYlIQ0H]OiN<?IQ[Y12
+R1
+R0
+w1455068172
+8C:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+FC:/Users/Freddy/Desktop/RLE/rle_testbench2.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1455069388.530000
+!s107 C:/Users/Freddy/Desktop/RLE/rle_testbench2.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Freddy/Desktop/RLE/rle_testbench2.v|
+!i113 1
+R3

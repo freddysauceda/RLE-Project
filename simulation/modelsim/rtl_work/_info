@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Freddy/Desktop/RLE/simulation/modelsim
+vrle
+!s110 1455069008
+!i10b 1
+!s100 ajmZN7IY0`1oBm[e5dh7I0
+InM<^F2O4VPY?NfHW9e57<3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1455067568
+8C:/Users/Freddy/Desktop/RLE/rle_interface.v
+FC:/Users/Freddy/Desktop/RLE/rle_interface.v
+L0 1
+OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1455069008.000000
+!s107 C:/Users/Freddy/Desktop/RLE/rle_interface.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Freddy/Desktop/RLE|C:/Users/Freddy/Desktop/RLE/rle_interface.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Freddy/Desktop/RLE
